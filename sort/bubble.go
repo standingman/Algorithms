@@ -1,8 +1,6 @@
 package sort
 /**
-
-		冒泡排序
-
+冒泡排序
  */
 func BubbleSort(arr []int) {
 	for i := len(arr) - 1; i >= 0; i-- {

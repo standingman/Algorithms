@@ -1,5 +1,7 @@
 package sort
-
+/**
+选择排序
+ */
 func SelectionSort(arr []int) {
 	for i := 0; i < len(arr); i++ {
 		min := i
