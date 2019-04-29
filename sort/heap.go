@@ -1,7 +1,8 @@
 package sort
+
 /**
-	推排序
- */
+推排序
+*/
 func BuildHeap(arr []int, length int) {
 	if length == 1 {
 		return
@@ -22,13 +23,13 @@ func BuildHeap(arr []int, length int) {
 		}
 	}
 }
-func HeapSort(arr []int){
+func HeapSort(arr []int) {
 	length := len(arr)
 	for i := 0; i < length; i++ {
-		lastMessLen:=length-i
-		BuildHeap(arr,lastMessLen)
-		if i<length{
-			arr[0],arr[lastMessLen-1]=arr[lastMessLen-1],arr[0]
+		lastMessLen := length - i
+		BuildHeap(arr, lastMessLen)
+		if i < length {
+			arr[0], arr[lastMessLen-1] = arr[lastMessLen-1], arr[0]
 		}
 	}
 }
